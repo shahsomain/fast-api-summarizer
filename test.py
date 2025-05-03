@@ -1,0 +1,10 @@
+import requests
+
+response = requests.post(
+    "http://127.0.0.1:8000/summarize",
+    json={"text": "Artificial Intelligence (AI) is rapidly transforming industries by enabling machines to mimic human intelligence. From self-driving cars to advanced recommendation systems, AI is being integrated into everyday applications to improve efficiency, accuracy, and decision-making. Machine learning, a subset of AI, allows computers to learn from data without being explicitly programmed, making it possible to recognize patterns, make predictions, and adapt to new situations."}
+)
+
+print(response.json())
+
+
